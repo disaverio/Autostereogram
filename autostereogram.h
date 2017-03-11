@@ -12,7 +12,7 @@
     #include <string.h>
 
     #define PATTERN_WIDTH           120
-    #define MIN_PATTERN_REPETITIONS 5 // horizontal repetitions of pattern: 6 for depth_map (i.e. stereogram) and 1 for control
+    #define MIN_PATTERN_REPETITIONS 5 // min horizontal repetitions of pattern to cover input depth map
     #define MAX_RELATIVE_DEVIATION  0.5 // relative to pattern_width
     #define MAX_PIXEL_DEVIATION     (PATTERN_WIDTH*MAX_RELATIVE_DEVIATION)
 
