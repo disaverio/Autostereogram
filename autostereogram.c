@@ -91,7 +91,6 @@ int main(int argc, char *argv[]) {
         exit(EXIT_FAILURE);
     }
     while ((k = getopt(argc, argv, "b:f:")) != -1) {
-        printf("CHAR %c %s\n", k, optarg);
         switch (k) {
             case 'b':
                 board_type_input = optarg;
