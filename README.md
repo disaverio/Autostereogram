@@ -30,5 +30,5 @@ make
 Depth map:
 ![Depth map](depth_maps/shark.png)
 
-Autostereogram:
+Output:
 ![Stereograms](stereograms/shark.png)

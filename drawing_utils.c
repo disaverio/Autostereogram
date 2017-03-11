@@ -99,7 +99,7 @@ void create_stereogram(GdkPixbuf *depth_map, GdkPixbuf *board, int depth_map_wid
                 guchar *stereogram_source_pixel = gdk_pixbuf_get_pixels(board) + h * as_row + w * as_n_ch;
                 int current_pattern = w / pattern_width;
 
-                for (int i = 0; i <= 2 /*current_pattern*/; i++) { // play with stop condition of this cycle to try
+                for (int i = 0; i <= MIN(2,current_pattern); i++) { // play with stop condition of this cycle to try
                     guchar *stereogram_destination_pixel = gdk_pixbuf_get_pixels(board) + h * as_row + ((w-i*pattern_width)+deviation) * as_n_ch;
                     stereogram_destination_pixel[0] = stereogram_source_pixel[0];
                     stereogram_destination_pixel[1] = stereogram_source_pixel[1];
