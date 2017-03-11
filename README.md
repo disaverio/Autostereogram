@@ -27,6 +27,8 @@ make
 ./autostereogram -f ../depth_maps/shark.png
 ```
 
+Depth map:
 ![Depth map](depth_maps/shark.png)
+
+Autostereogram:
 ![Stereograms](stereograms/shark.png)
-Format: ![Alt Text](url)
